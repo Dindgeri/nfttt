@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website xmlns="http://www.w3.org/1999/xhtml" xmlns:css="http://www.w3.org/2001/XMLSchema-css">
+
+  <head>
+    <title>Online Tattoo Bridging Tool</title>
+    <style>
+      <![CDATA[
+      body {
+        font-family: "FreeMono", "Andale Mono", monospace;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 20px;
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        fill: #00868C;
+      }
+
+      .burger-menu {
+        display: none;
+      }
+
+      .nav-bar {
+        display: flex;
+        justify-content: center;
+        background: #00B3BB;
+        padding: 10px;
+      }
+
+      .nav-bar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      .nav-bar ul li {
+        margin-right: 10px;
+      }
+
+      .nav-bar ul li a {
+        color: #FFF;
+        text-decoration: none;
+      }
+
+      .content {
+        margin-top: 20px;
+      }
+
+      .section {
+        display: none;
+      }
+
+      .section#home {
+        display: block;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+
+      p {
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+
+      @media only screen and (max-width: 1080px) {
+        .nav-bar {
+          display: contents;
+        }
+
+        h1 {
+          text-align: center;
+          font-size: 32px;
+        }
+
+        h2 {
+          font-size: 24px;
+          margin-top: 20px;
+        }
+
+        p {
+          font-size: 24px;
+        }
+
+        .logo {
+          display: none;
+        }
+
+        .burger-menu {
+          display: block;
+          cursor: pointer;
+          fill: #00868C;
+          margin-right: 80%;
+        }
+
+        .nav-bar ul {
+          flex-direction: column;
+          background: #00B3BB;
+          padding: 10px;
+          display: none;
+          font-size: 24px;
+        }
+
+        .nav-bar.active ul {
+          display: flex;
+        }
+
+        .nav-bar ul li {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+      ]]>
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.5C6.21 22.5 1.5 17.79 1.5 12S6.21 1.5 12 1.5 22.5 6.21 22.5 12 17.79 22.5 12 22.5zm.75-15.075c.414 0 .75.336.75.75v7.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-7.5c0-.414.336-.75.75-.75zm-6.75 0c.414 0 .75.336.75.75v7.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-7.5c0-.414.336-.75.75-.75zm13.5 0c.414 0 .75.336.75.75v7.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-7.5c0-.414.336-.75.75-.75z" />
+      </svg>
+      <div class="burger-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.5C6.21 22.5 1.5 17.79 1.5 12S6.21 1.5 12 1.5 22.5 6.21 22.5 12 17.79 22.5 12 22.5zm.75-15.075c.414 0 .75.336.75.75v7.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-7.5c0-.414.336-.75.75-.75zm-6.75 0c.414 0 .75.336.75.75v7.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-7.5c0-.414.336-.75.75-.75zm13.5 0c.414 0 .75.336.75.75v7.5c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-7.5c0-.414.336-.75.75-.75z" />
+        </svg>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#artists">Artists</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <section id="home" class="section">
+        <h1>The Non-Fungible Tattoo Shop</h1>
+        <h2>On-Chain Tattoos Right on the Dot</h2>
+        <p>Welcome to The Non-Fungible Tattoo Shop, where we combine the artistry of tattoos with the power of blockchain technology. Our platform serves as an online tattoo bridging tool, connecting talented artists, models, and customers.</p>
+        <p>With our innovative NFT system, each commissioned tattoo becomes a unique digital asset recorded on the blockchain, ensuring authenticity and preserving the artistic value.</p>
+      </section>
+      <section id="artists" class="section">
+        <h2>Discover Our Talented Artists</h2>
+        <p>Explore our diverse selection of tattoo artists, each with their unique style and specialization. Browse through their portfolios, find inspiration, and connect with the artist who resonates with your vision.</p>
+      </section>
+      <section id="process" class="section">
+        <h2>A Seamless Tattooing Process</h2>
+        <p>At The Non-Fungible Tattoo Shop, we prioritize your satisfaction and safety. Our streamlined process ensures a seamless tattooing experience, from initial consultations to the final artwork. Collaborate closely with your chosen artist to bring your tattoo ideas to life.</p>
+      </section>
+      <section id="pricing" class="section">
+        <h2>Fair and Transparent Pricing</h2>
+        <p>Our pricing is based on factors such as tattoo size, complexity, and the number of colors and needles required. We offer customized quotes tailored to your specific tattoo needs, ensuring fair and transparent pricing for every unique design.</p>
+      </section>
+      <section id="community" class="section">
+        <h2>Join Our Vibrant Community</h2>
+        <p>Connect with fellow tattoo enthusiasts, stay updated on the latest trends, and engage with our community through our official Instagram page. Share your tattoo experiences, discover inspiring artwork, and be part of the ever-growing NFT tattoo movement.</p>
+      </section>
+    </div>
+    <script>
+      <![CDATA[
+      const navLinks = document.querySelectorAll("nav ul li a");
+      const sections = document.querySelectorAll(".section");
+      const burgerMenu = document.querySelector(".burger-menu");
+      const navBar = document.querySelector(".nav-bar");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          const target = document.querySelector(link.getAttribute("href"));
+          sections.forEach((section) => {
+            section.style.display = "none";
+          });
+          target.style.display = "block";
+        });
+      });
+      burgerMenu.addEventListener("click", () => {
+        navBar.classList.toggle("active");
+      });
+      ]]>
+    </script>
+  </body>
+</website>
